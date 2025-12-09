@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscribe to Unlock Detectify</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 15px;
+      color: #333;
+    }
+    p {
+      margin-bottom: 30px;
+      color: #555;
+    }
+    input[type="email"], input[type="text"] {
+      width: 100%;
+      padding: 12px 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 14px 20px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    small {
+      display: block;
+      margin-top: 15px;
+      color: #888;
+    }
+    img.banner {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Banner -->
+    <img src="assets/detectify-banner.png" alt="Detectify Banner" class="banner">
+
+    <h1>Get Access to Detectify</h1>
+    <p>Subscribe to unlock the Supreme Shopify Intelligence Tool</p>
+
+    <!-- ConvertKit Newsletter Form -->
+    <form action="https://app.kit.com/confirm-subscription" method="post" onsubmit="return redirectAfterSubmit()">
+      <input type="text" name="first_name" placeholder="Your Name (optional)">
+      <input type="email" name="email_address" placeholder="Your Email" required>
+      <button type="submit">Get Access</button>
+    </form>
+
+    <small>We respect your privacy. No spam.</small>
+  </div>
+
+  <script>
+    function redirectAfterSubmit() {
+      // Wait 1 second before redirecting to allow form submission
+      setTimeout(function() {
+        window.location.href = "https://detectify.github.io/detectify/index.html";
+      }, 1000);
+      return true; // allow form submission
+    }
+  </script>
+
+</body>
+</html>
